@@ -11,7 +11,7 @@ class ProductsContainer extends Component {
 }
 
   componentDidMount() {
-   axios.get('http://localhost:3000/api/products.json')
+   axios.get('https://oceneo-api.herokuapp.com/api/products')
    .then(response => {
      console.log("Response:",response)
      this.setState({products: response.data})

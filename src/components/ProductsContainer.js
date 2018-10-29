@@ -11,9 +11,9 @@ class ProductsContainer extends Component {
 }
 
   componentDidMount() {
-   axios.get('https://oceneo-api.herokuapp.com/api/products')
+   axios.get('http://localhost:3000/api/products.json')
    .then(response => {
-     console.log("Response:",response)
+     console.log(response)
      this.setState({products: response.data})
    })
    .catch(error => console.log(error))
@@ -22,13 +22,27 @@ class ProductsContainer extends Component {
   render() {
 
     return (
-      <div>
+      <div className="container products">
 
         {this.state.products.map((product) =>  {
             return(
-              <div className="tile" key={product.id} >
-                <h4>{product.name}</h4>
-                <p>{product.description}</p>
+              <div className="card container" key={product.id} >
+                <div className="box">
+                  <div className="img container">
+                    <img src={product.image} alt={product.description}/>
+                  </div>
+                  <h2>{product.name}</h2>
+                  <span>{product.description}</span>
+
+                  <div className="display-rating">
+                    <i className="icon-star"></i>
+                    <i className="icon-star"></i>
+                    <i className="icon-star"></i>
+                    <i className="icon-star-empty"></i>
+                    <i className="icon-star-empty"></i>
+                    <a href="#">(Opinie - 3)</a>
+                  </div>
+                </div>
               </div>
             )
           })}

@@ -1,6 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
+import './css/boostrap.css';
+import './css/fontello_icons-embedded.css';
+import './css/custom.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 

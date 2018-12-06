@@ -6,9 +6,9 @@ import ProductsContainer from './components/ProductsContainer'
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-            Oceneo - oceń produkty
+      <div className="container">
+        <header className="container">
+            <h2>Oceneo - oceń produkty</h2>
         </header>
         <ProductsContainer />
       </div>

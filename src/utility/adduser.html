@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!--META-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!--CSS-->
+    <link rel="stylesheet" href="../css/bootstrap.css" >
+	<link rel="stylesheet" href="../css/fontello_icons-embedded.css" >
+	<link rel="stylesheet" href="../css/login.css" >
+	<!--JS-->
+	<script src="../js/jquery-3.3.1.js"></script>
+
+</head>
+<body class="container">
+<div class="wrapper fadeInDown">
+  <div id="formContent">
+    <!-- Logo -->
+    <div class="fadeIn first">
+      <h1>Oceneo</h1>
+    </div>
+    <!-- Login Form -->
+    <form>
+      <input type="text" id="login" class="fadeIn second" name="login" placeholder="Login" required>
+	  <input type="text" id="name" class="fadeIn second" name="name" placeholder="Imię" required>
+	  <input type="text" id="surname" class="fadeIn second" name="surname" placeholder="Nazwisko" required>
+      <input type="password" id="password" class="fadeIn third" name="password" placeholder="Hasło" required>
+	  <input type="password" id="password_confirm" class="fadeIn third" name="password_confirm" placeholder="Potwierdź Hasło" required>
+      <input type="submit" id="submit" name="submit" class="fadeIn fourth" value="Zarejestruj" disabled>
+    </form>
+    <!--Passowrd-->
+    <div id="formFooter">
+	  <a class="underlineHover" href="login.html">Masz już konto?</a>
+    </div>
+	<div id="goback">
+	  <a class="underlineHover" href="../index.html">Powrót do strony głównej.</a>
+    </div>
+
+  </div>
+</div>
+
+<script>
+$('#password, #password_confirm').on('keyup', function() {
+  if ($('#password').val() == $('#password_confirm').val()) {
+    $('#submit').css('backgroundColor', 'green');
+    $('#submit').prop('disabled', false);
+  } else {
+    $('#submit').css('backgroundColor', 'red');
+    $('#submit').prop('disabled', true);
+  }
+});
+</script>
+</body>
+</html>

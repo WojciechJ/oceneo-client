@@ -1,0 +1,350 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!--META-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!--CSS-->
+    <link rel="stylesheet" href="../css/bootstrap.css" >
+	<link rel="stylesheet" href="../css/fontello_icons-embedded.css" >
+	<link rel="stylesheet" href="../css/custom.css" >
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.css">
+	<!--JS-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+	<script src="../js/menu.js"></script>
+
+
+</head>
+<body class="container">
+<!--//--MENU BAR-->
+<header class="container">
+	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+		<a class="navbar-brand" href="../index.html"><span class="mainlogo"><h1>Oceneo</h1></span></a>
+	    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar1" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+		<span class="navbar-toggler-icon"></span>
+	    </button>
+		<form class="searchbar" role="search">
+			<div class="input-group">
+				<input type="text" class="form-control" placeholder="Czego szukasz" name="srch-term" id="srch-term"/>
+				<div class="input-group-btn">
+					<button class="btn btn-outline-success form-control-menu" type="submit"><i class="icon-search"></i></button>
+				</div>
+			</div>
+		</form>
+		<div class="collapse navbar-collapse" id="navbar1">
+			<ul class="navbar-nav ml-auto"> 
+					<li class="nav-item ">
+						<a class="nav-link menu-item" href="../utility/addproduct.html"><i class="icon-plus"></i><span class="largenav">Dodaj produkt</span></a>
+					</li>
+				<!-- <li class="nav-item dropdown"> -->
+					<!-- <a class="nav-link  dropdown-toggle" href="#" data-toggle="dropdown">  Dropdown  </a> -->
+					<!-- <ul class="dropdown-menu"> -->
+					  <!-- <li><a class="dropdown-item" href="#"> Menu item 1</a></li> -->
+					  <!-- <li><a class="dropdown-item" href="#"> Menu item 2 </a></li> -->
+					<!-- </ul> -->
+				<!-- </li> -->
+				<li class="nav-item">
+					<a class="nav-link menu-item" href="../utility/login.html"><i class="icon-user"></i><span class="largenav">Logowanie</span></a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link menu-item" href="../utility/adduser.html"><i class="icon-user-add"></i><span class="largenav">Rejestracja</span></a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link menu-item" href="../utility/profile.html"><i class="icon-user"></i><span class="largenav">Konto</span></a>
+				</li>
+			</ul>
+		</div>
+	</nav>
+		
+<!--MENU--//-->
+</header>
+<!--MENU BAR--//-->
+<!--//--GALLERY-->
+<div class="container products_page">
+	<div class="row">
+	<div class="col-md-6 product_info">
+		<div class="container gallery-container">
+			<div id="gallery" class="carousel slide tz-gallery" data-ride="carousel">
+			  <ul class="carousel-indicators">
+				<li data-target="#gallery" data-slide-to="0" class="active"></li>
+				<li data-target="#gallery" data-slide-to="1"></li>
+				<li data-target="#gallery" data-slide-to="2"></li>
+			  </ul>
+				<div class="carousel-inner">
+				  <!--ZDJECIE 1-->
+					<div class="carousel-item active">
+						<div class="thumbnail">
+							<a class="lightbox" href="https://o.aolcdn.com/images/dims?quality=100&image_uri=https%3A%2F%2Fs.aolcdn.com%2Fhss%2Fstorage%2Fmidas%2F1bae1ff05f60c93ff69bcf81ab56169d%2F206660589%2Faffordable-ed.jpg&client=amp-blogside-v2&signature=d8aa649066f9b16ea2014cf15af96d76dca56e9d">
+								<img src="https://o.aolcdn.com/images/dims?quality=100&image_uri=https%3A%2F%2Fs.aolcdn.com%2Fhss%2Fstorage%2Fmidas%2F1bae1ff05f60c93ff69bcf81ab56169d%2F206660589%2Faffordable-ed.jpg&client=amp-blogside-v2&signature=d8aa649066f9b16ea2014cf15af96d76dca56e9d" alt="Bridge">
+							</a>
+						</div>
+					</div>
+					<!--ZDJECIE 2-->
+					<div class="carousel-item">
+						<div class="thumbnail">
+							<a class="lightbox" href="https://i.wpimg.pl/730x0/m.komorkomania.pl/apple-iphone-xs-1-ff43ae2021e4a0.jpg">
+								<img src="https://i.wpimg.pl/730x0/m.komorkomania.pl/apple-iphone-xs-1-ff43ae2021e4a0.jpg" alt="Park">
+							</a>
+						</div>
+					</div>
+					<!--ZDJECIE 3-->
+					<div class="carousel-item">
+						<div class="thumbnail">
+							<a class="lightbox" href="https://media.idownloadblog.com/wp-content/uploads/2018/09/iPhone-XR-XS-wallpaper-mockup.jpg">
+								<img src="https://media.idownloadblog.com/wp-content/uploads/2018/09/iPhone-XR-XS-wallpaper-mockup.jpg" alt="Tuneel">
+							</a>
+						</div>
+					</div>
+				</div>
+			<!--WSTECZ/DALEJ-->
+				<a class="carousel-control-prev" href="#gallery" data-slide="prev">
+					<span class="carousel-control-prev-icon"></span>
+				</a>
+				<a class="carousel-control-next" href="#gallery" data-slide="next">
+					<span class="carousel-control-next-icon"></span>
+				</a>
+			</div>
+		</div>
+	</div>
+<!--//--SPECYFIKACJA-->
+		<div class="col-md-6 product_info">
+			<div class="row">
+			<h5>Specyfikacja</h5>
+			</div>
+			<hr/>
+			<div class="row">
+				<div id="parametr-1"class="col-sm-3 bold">Ekran:</div>
+				<div id="wartosc-1" class="col-sm">
+					<p>6.1 inches, 90.3 cm2 (~79.0% screen-to-body ratio)</p>
+					<p>828 x 1792 pixels, 19.5:9 ratio (~326 ppi density)</p>
+					<p>True-tone display</p>
+				</div>
+			</div>
+			<div class="row">
+				<div id="parametr-2" class="col-sm-3 bold">Wymiary:</div>
+				<div id="wartosc-2" class="col-sm">
+					<p>150.9 x 75.7 x 8.3 mm (5.94 x 2.98 x 0.33 in)</p>
+				</div>
+			</div>
+			<div class="row">
+				<div id="parametr-3" class="col-sm-3 bold">Pamięć:</div>
+				<div id="wartosc-3" class="col-sm">
+					<p>64/128/256 GB, 3 GB RAM</p>
+				</div>
+			</div>
+			<div class="row">
+				<div id="parametr-4" class="col-sm-3 bold">Aparat:</div>
+				<div id="wartosc-4" class="col-sm">
+					<p>12 MP, f/1.8, 26mm (wide), 1/2.55", 1.4µm, OIS, PDAF</p>
+					<p>Quad-LED dual-tone flash, HDR (photo/panorama)</p>
+					<p>2160p@24/30/60fps, 1080p@30/60/120/240fps, HDR, stereo sound rec.</p>
+				</div>
+			</div>
+		</div>
+<!--SPECYFIKACJA--//-->
+</div>
+<!--//--OPINIE-->
+	<div class="container comment_section">
+	<!--//--OCENY-->
+		<div class="row">
+				<!--ŚREDNIA-->
+				<div class="col-sm-6 rating_simple">
+					<h4>Średnia ocena użytkowników:</h4>
+					<div class="row">
+						<div class="col-sm-2  myyellow"><i class="icon-star"></i></div>
+						<div class="col-sm-5">4.8/5</div>
+					</div>
+				</div>
+			<div class="col-sm-6 rating_advanced">
+				<!--5 STARS-->
+				<a href="#">
+					<div class="row">
+						<span>5</span>
+						<div class="col-sm-1  "><i class="icon-star"></i></div>
+						<div class="col-sm-5">
+							<div class="progress" style="height:9px; margin:8px 0;">
+							  <div class="progress-bar progress-bar-success" style="width: 75%">
+							  </div>
+							</div>
+						</div>
+						<div class="col-sm-2">21</div>
+					</div>
+				</a>
+				<!--4 STARS-->
+				<a href="#">
+					<div class="row">
+						<span>4</span>
+						<div class="col-sm-1  "><i class="icon-star"></i></div>
+						<div class="col-sm-5">
+							<div class="progress" style="height:9px; margin:8px 0;">
+							  <div class="progress-bar progress-bar-success" style="width: 5%">
+							  </div>
+							</div>
+						</div>
+						<div class="col-sm-2">3</div>
+					</div>
+				</a>
+				<!--3 STARS-->
+				<a href="#">
+					<div class="row">
+						<span>3</span>
+						<div class="col-sm-1  "><i class="icon-star"></i></div>
+						<div class="col-sm-5">
+							<div class="progress" style="height:9px; margin:8px 0;">
+							  <div class="progress-bar progress-bar-success" style="width: 10%">
+							  </div>
+							</div>
+						</div>
+						<div class="col-sm-2">5</div>
+					</div>
+				</a>
+				<!--2 STARS-->
+				<a href="#">
+					<div class="row">
+						<span>2</span>
+						<div class="col-sm-1  "><i class="icon-star"></i></div>
+						<div class="col-sm-5">
+							<div class="progress" style="height:9px; margin:8px 0;">
+							  <div class="progress-bar progress-bar-success" style="width: 5%">
+							  </div>
+							</div>
+						</div>
+						<div class="col-sm-2">3</div>
+					</div>
+				</a>
+				<!--1 STARS-->
+				<a href="#">
+					<div class="row">
+						<span>1</span>
+						<div class="col-sm-1  "><i class="icon-star"></i></div>
+						<div class="col-sm-5">
+							<div class="progress" style="height:9px; margin:8px 0;">
+							  <div class="progress-bar progress-bar-success" style="width: 5%">
+							  </div>
+							</div>
+						</div>
+						<div class="col-sm-2">1</div>
+					</div>
+				</a>
+			</div>
+		</div>
+	<!--OCENY--//-->
+	<!--//--KOMENTARZE-->
+			<div class="row">
+				<div class="col-sm">
+					<hr/>
+					<div class="review-block">
+					<!--OPINIA 1-->
+						<div class="row">
+							<div class="col-sm-2">
+								<img src="https://dummyimage.com/70x70/9d9da3/050505" class="img-rounded">
+								<div class="review-block-name">Andrzej</div>
+								<div class="review-block-date">Październik 25, 2018<br/>15:30</div>
+							</div>
+							<div class="col-sm-10">
+								<div class="review-block-rate">
+									  <i class="icon-star"></i>
+									  <i class="icon-star"></i>
+									  <i class="icon-star"></i>
+									  <i class="icon-star-empty"></i>
+									  <i class="icon-star-empty"></i>
+								</div>
+								<div class="review-block-title">polecam</div>
+								<div class="review-block-description">Niesamowicie zwiększa produktywność. Organizowanie zdań dnia codziennego z Notem to prawdziwa frajda. Funkcja konwersji pisma odręcznego na cyfrowy działa jak magia. Całość zwieńczona świetnym ekranem i aparatem. Chyba będę fanem serii.</div>
+								<hr/>
+								<div class="row">
+									<div class="col-sm-6">
+										<h6>Zalety:</h6>
+									</div>
+								
+									<div class="col-sm-6">
+										<h6>Wady:</h6>
+									</div>
+								</div>
+								<div class="review-block-cons-pros row">
+									<div class="col-sm-6 review-block-pros">
+										<p>szybki czas ładowania</p>
+										<p>duży ekran</p>
+										<p>aparat</p>
+									</div>
+									<div class="col-sm-6 review-block-cons">
+										<p>cena</p>
+									</div>
+								</div>
+							</div>
+							<div class="col-sm-2">
+								<i class="icon-thumbs-up"></i>
+							</div>
+						</div>
+						<hr/>
+					</div>
+				</div>
+				<div class="container">
+					<input type="button" value="Dodaj opinię" class="add btn btn-outline-primary" onclick="window.location='../utility/addreview.html';"></input>
+				</div>
+			</div>
+		<!--//--KOMENTARZE-->
+	</div>
+		<!--OPINIE--//-->
+	
+	
+
+<!--//--STOPKA-->
+<footer class="footer">
+	<hr>
+	<div class="container bottom_border">
+		<div class="row">
+			<div class=" col-sm-4 col-md col-sm-4  col-12 col">
+				<h5 class="headin5_amrc col_white_amrc pt2">Kontakt</h5>
+				<p class="mb10">Lorem Ipsum is simply dummy text</p>
+				<p> ul. Jakastam Miasto 11-111 </p>
+				<p> +48 505606707  </p>
+				<p> adres@gmail.com  </p>
+			</div>
+			<div class=" col-sm-4 col-md  col-6 col">
+				<h5 class="headin5_amrc col_white_amrc pt2">Szybkie linki</h5>
+				<ul class="footer_ul_amrc">
+					<li><a href="#">Centrum Pomocy</a></li>
+					<li><a href="#">Regulamin</a></li>
+					<li><a href="#">Aktualności</a></li>
+					<li><a href="#">Polityka prywatności</a></li>
+					<li><a href="#">Dla firm</a></li>
+					<li><a href="#">Kariera</a></li>
+				</ul>
+			</div>
+			<div class=" col-sm-4 col-md  col-6 col">
+				<h5 class="headin5_amrc col_white_amrc pt2">Szybkie linki</h5>
+				<ul class="footer_ul_amrc">
+					<li><a href="#">Centrum Pomocy</a></li>
+					<li><a href="#">Regulamin</a></li>
+					<li><a href="#">Aktualności</a></li>
+					<li><a href="#">Polityka prywatności</a></li>
+					<li><a href="#">Dla firm</a></li>
+					<li><a href="#">Kariera</a></li>
+				</ul>
+			</div>
+
+
+			<div class=" col-sm-4 col-md  col-6 col">
+				<h5 class="headin5_amrc col_white_amrc pt2">Media</h5>
+				<ul class="footer_ul_amrc">
+					<li><a href="#">Facebook</a></li>
+					<li><a href="#">Twitter</a></li>
+					<li><a href="#">Instagram</a></li>
+					<li><a href="#">Dodaj </a></li>
+					<li><a href="../utility/addproduct.html">Dodaj pro</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</footer>
+<!--STOPKA--//-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.js"></script>
+<script>
+   baguetteBox.run('.tz-gallery');
+</script>
+</div>
+</body>
+</html>

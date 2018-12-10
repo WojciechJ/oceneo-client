@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import axios from 'axios'
 
 const Product = ({product}) =>
 <div className="card container" key={product.id} >
@@ -23,6 +24,8 @@ const Product = ({product}) =>
       <div>
       <a href="#">(Opinie - {product.opinions_count})</a>
       </div>
+
+    
   </div>
 </div>
 

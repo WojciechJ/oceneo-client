@@ -1,55 +1,57 @@
 import React, { Component } from 'react'
 import axios from 'axios'
 
+
 class ProductsContainer extends Component {
 
   constructor(props) {
-  super(props)
-  this.state = {
-    products: []
-  }
+  super(props);
+  this.state = {products:[]};
 }
+
 
   componentDidMount() {
 
-   axios.get('http://oceneo-api.herokuapp.com/api/products.json')
-   .then(response => {
-     console.log(response)
-     this.setState({products: response.data})
+  //http://oceneo-api.herokuapp.com/api/products.json
+  
+   axios.get('https://jsonplaceholder.typicode.com/users')
+   .then(res => {
+     console.log(res)
+	 const products = res.data;
+     this.setState({products})
    })
    .catch(error => console.log(error))
  }
 
-  render() {
-
-    return (
-      <div className="container products">
-
-        {this.state.products.map((product) =>  {
-            return(
-              <div className="card container" key={product.id} >
-                <div className="box">
-                  <div className="img container">
-                    <img src={product.image} alt={product.description}/>
-                  </div>
-                  <h2>{product.name}</h2>
-                  <span>{product.description}</span>
-
-                  <div className="display-rating">
-                    <i className="icon-star"></i>
-                    <i className="icon-star"></i>
-                    <i className="icon-star"></i>
-                    <i className="icon-star-empty"></i>
-                    <i className="icon-star-empty"></i>
-                    <a href="#">(Opinie - 3)</a>
-                  </div>
-                </div>
-              </div>
-            )
-          })}
-      </div>
-    )
-  }
+  render(){
+	  
+		return(
+				<div className="container products">
+				{this.state.products.map(product => 
+					<div className="card container" key={product.id} >
+						<div className="box">
+							<div className="img container">
+								<img src={product.image} alt={product.description}/>
+							</div>
+							<h2>{product.name}</h2>
+							<span>{product.description}</span>
+							  <div className="display-rating">
+								<i className="icon-star"></i>
+								<i className="icon-star"></i>
+								<i className="icon-star"></i>
+								<i className="icon-star-empty"></i>
+								<i className="icon-star-empty"></i>
+								<a href="#">(Opinie - 3)</a>
+							  </div>
+						</div>
+					</div>
+					)}
+				</div>
+				
+          
+		 )
+		}
 }
+
 
 export default ProductsContainer

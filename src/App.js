@@ -1,16 +1,15 @@
-import React, { Component } from 'react';
-import 'bootstrap/dist/css/bootstrap.css';
-import './App.css';
+﻿import React, { Component } from 'react';
+import './css/bootstrap.css';
 import ProductsContainer from './components/ProductsContainer'
-
+import Header from './components/Header';
+import Footer from './components/Footer';
 class App extends Component {
   render() {
     return (
       <div className="container">
-        <header className="container">
-            <h2>Oceneo - oceń produkty</h2>
-        </header>
-        <ProductsContainer />
+        <Header />
+		<ProductsContainer />
+		<Footer />
       </div>
     );
   }

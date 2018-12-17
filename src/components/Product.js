@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+
 
 const Product = ({product}) =>
 <div className="card container" key={product.id} >
@@ -13,11 +13,7 @@ const Product = ({product}) =>
 
       <div className="display-rating">
       Ocena {product.avg}
-            <FontAwesomeIcon icon="star" />
-            <FontAwesomeIcon icon="star" />
-            <FontAwesomeIcon icon="star" />
-            <FontAwesomeIcon icon="star" />
-            <FontAwesomeIcon icon="star" />
+            
       </div>
 
       <div>

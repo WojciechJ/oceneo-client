@@ -1,7 +1,4 @@
 import React, { Component } from 'react';
-import '../css/bootstrap.css';
-import '../css/custom.css';
-import '../css/fontello_icons-embedded.css';
 
 class Footer extends Component {
   render() {

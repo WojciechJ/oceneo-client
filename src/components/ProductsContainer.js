@@ -13,8 +13,9 @@ class ProductsContainer extends Component {
   componentDidMount() {
 
   //http://oceneo-api.herokuapp.com/api/products.json
+  //https://jsonplaceholder.typicode.com/users
   
-   axios.get('https://jsonplaceholder.typicode.com/users')
+   axios.get('http://oceneo-api.herokuapp.com/api/products.json')
    .then(res => {
      console.log(res)
 	 const products = res.data;
@@ -30,9 +31,11 @@ class ProductsContainer extends Component {
 				{this.state.products.map(product => 
 					<div className="card container" key={product.id} >
 						<div className="box">
-							<div className="img container">
-								<img src={product.image} alt={product.description}/>
-							</div>
+							<a href="/product">
+								<div className="img container">
+									<img src={product.image} alt={product.description}/>
+								</div>
+							</a>
 							<h2>{product.name}</h2>
 							<span>{product.description}</span>
 							  <div className="display-rating">
@@ -41,7 +44,7 @@ class ProductsContainer extends Component {
 								<i className="icon-star"></i>
 								<i className="icon-star-empty"></i>
 								<i className="icon-star-empty"></i>
-								<a href="#">(Opinie - 3)</a>
+								<a href="/product">(Opinie - 3)</a>
 							  </div>
 						</div>
 					</div>

@@ -28,7 +28,7 @@ w katalogu oceneo-client uruchamia tryb development na localhost:3001.
 ```
 npm install
 ```
-### Uruchomienie na wydziale
+### Uruchomienie na wydziale (w przypadku błędu z wersjami webpack'a)
 
 Open cmd on the node-modules folder outside of your project folder
 

@@ -28,7 +28,31 @@ w katalogu oceneo-client uruchamia tryb development na localhost:3001.
 ```
 npm install
 ```
-Naprawia większość błędów.
+### Uruchomienie na wydziale
+
+Open cmd on the node-modules folder outside of your project folder
+
+Uninstall webpack and webpack-dev-server:
+```
+npm uninstall webpack
+npm uninstall webpack-dev-server
+```
+Delete the node-modules folder and the package-lock.json file from your project's folder.
+
+Open the node-modules again
+```
+npm install webpack@4.19.1
+npm install webpack-dev-server@3.1.9
+```
+Use this command on your project folder
+```
+npm install
+```
+Zmienić w package.json 'set PORT' na: (u mnie musi być 'set PORT # &&' bo inaczej nie działa)
+```
+PORT=3001 react-scripts start
+```
+W przeglądarce:
 ```
 http://localhost:3001/home
 ```

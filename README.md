@@ -61,6 +61,7 @@ http://localhost:3001/home
 - https://alligator.io/react/axios-react/
 - https://magic.reactjs.net/htmltojsx.htm
 - https://daveceddia.com/watch-out-for-undefined-state/
+
 Nasze api
 ```
 http://oceneo-api.herokuapp.com/api/products.json

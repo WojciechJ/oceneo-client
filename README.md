@@ -63,6 +63,7 @@ http://localhost:3001/home
 - https://daveceddia.com/watch-out-for-undefined-state/
 - https://scotch.io/tutorials/build-a-react-app-with-user-authentication#toc-index-page
 - https://goshakkk.name/array-form-inputs/
+- https://serverless-stack.com/chapters/create-a-login-page.html
 
 Nasze api
 ```

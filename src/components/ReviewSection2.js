@@ -1,13 +1,12 @@
 import React, { Component } from 'react'
 import axios from 'axios'
 
-
-
 class ReviewSection extends Component {
 
   constructor(props) {
   super(props);
   this.state = {products:[]};
+  const DATE_OPTIONS = { weekday: 'short', year: 'numeric', month: 'short', day: 'numeric' };
 }
 
 
@@ -16,7 +15,7 @@ class ReviewSection extends Component {
   //http://oceneo-api.herokuapp.com/api/products.json
   //https://jsonplaceholder.typicode.com/users
   
-   axios.get('http://oceneo-api.herokuapp.com/api/products/1/rates.json')
+   axios.get('http://oceneo-api.herokuapp.com/api/products/2/rates.json')
    .then(res => {
      console.log(res)
 	 const products = res.data;

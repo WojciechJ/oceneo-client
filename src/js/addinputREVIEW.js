@@ -1,4 +1,4 @@
-$(document).ready(function() {
+
     $("#add_A").click(function() {
     	var lastField_A = $("#good div:last");
         var intId_A = (lastField_A && lastField_A.length && lastField_A.data("idx") + 1) || 1;
@@ -16,9 +16,9 @@ $(document).ready(function() {
         $("#good").append(fieldWrapper_A);
     });
 
-});
 
-$(document).ready(function() {
+
+
     $("#add_B").click(function() {
     	var lastField_B = $("#bad div:last");
         var intId_B = (lastField_B && lastField_B.length && lastField_B.data("idx") + 1) || 1;
@@ -36,8 +36,8 @@ $(document).ready(function() {
         $("#bad").append(fieldWrapper_B);
     });
 
-});
-$(document).ready(function($){
+
+
 	    
 	$(".btnrating").on('click',(function(e) {
 	
@@ -62,4 +62,4 @@ $(document).ready(function($){
 	}));
 	
 		
-});
+

@@ -1,13 +1,12 @@
 import React, { Component } from 'react'
 import axios from 'axios'
 
-
-
 class ReviewSection extends Component {
 
   constructor(props) {
   super(props);
   this.state = {products:[]};
+  const DATE_OPTIONS = { weekday: 'short', year: 'numeric', month: 'short', day: 'numeric' };
 }
 
 

@@ -31,11 +31,12 @@ class ProductsContainer extends Component {
 				{this.state.products.map(product => 
 					<div className="card container" key={product.id} >
 						<div className="box">
-							<a href="/product">
+							<a href="/product1">
 								<div className="img container">
 									<img src={product.image} alt={product.description}/>
 								</div>
 							</a>
+							
 							<h2>{product.name}</h2>
 							<span>{product.description}</span>
 							  <div className="display-rating">

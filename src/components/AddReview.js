@@ -104,8 +104,8 @@ class AddReview extends Component {
 		
 		<div>
 			<HeaderSmall />		
-			<form onSubmit={this.handleSubmit} role="form">
-				<div className="row">
+			<form onSubmit={this.handleSubmit} role="form" className="container">
+			  <div className="row">
 				  <h4>Dodaj nową opinię</h4>
 				</div>
 			  <hr />

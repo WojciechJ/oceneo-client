@@ -65,6 +65,7 @@ http://localhost:3001/home
 Nasze api
 ```
 http://oceneo-api.herokuapp.com/api/products.json
+http://oceneo-api.herokuapp.com/api/products/<id>/rates.json
 ```
 Przykladowe api
 ```
@@ -82,15 +83,14 @@ https://jsonplaceholder.typicode.com/users
 - [x] profil użytkownika
 - [ ] edycja produktu
 
-##### Skrypty
+##### Do reacta
 - [x] router-sciezki
 - [x] strona startowa
 - [ ] dodanie użytkownika
 - [ ] dodanie produktu
 - [ ] pobranie z bazy danych do edycji produktu
-- [ ] obsługa zdjęcia z pluginu (jak za trudne wyjdzie to coś prostszego się zrobi)
 - [ ] usunięcie produktu
-- [ ] dodanie opinii
+- [x] dodanie opinii
 - [ ] usunięcie opinii
 - [ ] wyszukanie frazy i zwrócenie wyniku
 - [ ] sprawdzenie czy użytkownik jest zalogowany

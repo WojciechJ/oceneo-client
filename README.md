@@ -61,6 +61,8 @@ http://localhost:3001/home
 - https://alligator.io/react/axios-react/
 - https://magic.reactjs.net/htmltojsx.htm
 - https://daveceddia.com/watch-out-for-undefined-state/
+- https://scotch.io/tutorials/build-a-react-app-with-user-authentication#toc-index-page
+- https://goshakkk.name/array-form-inputs/
 
 Nasze api
 ```

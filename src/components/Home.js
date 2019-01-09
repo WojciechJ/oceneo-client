@@ -10,7 +10,9 @@ class Home extends Component {
     return (
 	
       <div className="container">
+		<div className="container">
         <Header />
+		</div>
 		<ProductsContainer />
 		<Footer />
       </div>

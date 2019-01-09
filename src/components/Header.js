@@ -43,7 +43,7 @@ class Header extends Component {
             </Nav>
           </Collapse>
 		  
-		  <form className="searchbar" role="search">
+		  <form className="searchbar row" role="search">
             <div className="input-group">
               <input type="text" className="form-control" placeholder="Czego szukasz" name="srch-term" id="srch-term" />
               <div className="input-group-btn">

@@ -27,7 +27,7 @@ class ProductsContainer extends Component {
   render(){
 	  
 		return(
-				<div className="container products">
+				<div className="container ">
 				{this.state.products.map(product => 
 					<div className="card container" key={product.id} >
 						<div className="box">

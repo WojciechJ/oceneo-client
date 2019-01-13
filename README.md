@@ -87,16 +87,16 @@ https://jsonplaceholder.typicode.com/users
 - [ ] edycja produktu
 
 ##### Do reacta
-- [x] router-sciezki
-- [x] strona startowa
+- [x] router-sciezki 
+- [x] strona startowa 
 - [ ] dodanie użytkownika
 - [ ] dodanie produktu
 - [ ] pobranie z bazy danych do edycji produktu
 - [ ] usunięcie produktu
-- [x] dodanie opinii
+- [ ] dodanie opinii (w trakcie)
 - [ ] usunięcie opinii
 - [ ] wyszukanie frazy i zwrócenie wyniku
-- [ ] sprawdzenie czy użytkownik jest zalogowany
+- [ ] logowanie (w trakcie)
 - [ ] sprawdzenie typu użytkownika i dodanie/usunięcie funkcji
 - [ ] wylogowanie użytkownika
 

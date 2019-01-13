@@ -93,10 +93,10 @@ https://jsonplaceholder.typicode.com/users
 - [ ] dodanie produktu
 - [ ] pobranie z bazy danych do edycji produktu
 - [ ] usunięcie produktu
-- [ ] dodanie opinii (w trakcie)
+- [ ] dodanie opinii (**w trakcie**)
 - [ ] usunięcie opinii
 - [ ] wyszukanie frazy i zwrócenie wyniku
-- [ ] logowanie (w trakcie)
+- [ ] logowanie (**w trakcie**)
 - [ ] sprawdzenie typu użytkownika i dodanie/usunięcie funkcji
 - [ ] wylogowanie użytkownika
 

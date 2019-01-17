@@ -1,6 +1,11 @@
 import React, { Component } from 'react'
 import axios from 'axios'
-
+import {
+	BrowserRouter as Router,
+	Route,
+	withRouter,
+	Link
+} from 'react-router-dom';
 
 class ProductsContainer extends Component {
 
@@ -22,34 +27,30 @@ class ProductsContainer extends Component {
      this.setState({products})
    })
    .catch(error => console.log(error))
+   
  }
 
   render(){
 	  
 		return(
-				<div className="container ">
-				{this.state.products.map(product => 
-					<div className="card container" key={product.id} >
-						<div className="box">
-							<a href="/product1">
-								<div className="img container">
-									<img src={product.image} alt={product.description}/>
-								</div>
-							</a>
-							
-							<h2>{product.name}</h2>
-							<span>{product.description}</span>
-							  <div className="display-rating">
-								<i className="icon-star"></i>
-								<i className="icon-star"></i>
-								<i className="icon-star"></i>
-								<i className="icon-star-empty"></i>
-								<i className="icon-star-empty"></i>
-								<a href="/product">(Opinie - 3)</a>
-							  </div>
+				<div className="container">
+				{this.state.products.map(product =>
+				<div className="card container" key={product.id}>
+				<div className="box">
+					<Link to={'/product/'+product.id}>
+						<div className="img container">
+							<img src={product.image}/>
 						</div>
+					</Link>
+					<div className="container">
+						<h2>
+						{product.name}<br/><span>{product.description}</span>
+						</h2>
 					</div>
-					)}
+				</div>
+		</div>
+				)}
+
 				</div>
 				
           

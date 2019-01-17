@@ -8,6 +8,7 @@
     "create-react-class": "^15.6.3",
     "jquery": "^3.3.1",
     "node-pre-gyp": "^0.11.0",
+    "path-to-regexp": "^2.4.0",
     "popper": "^1.0.1",
     "react": "^16.7.0",
     "react-dom": "^16.7.0",

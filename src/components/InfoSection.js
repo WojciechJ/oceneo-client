@@ -30,7 +30,7 @@ class InfoSection extends Component {
  
 <div className="row">
       
-    <div className="col-md-6 product_info">
+    <div className="col-lg-6 product_info">
         <div className="container gallery-container">
          
             <div id="gallery" className="carousel slide tz-gallery" data-ride="carousel">
@@ -72,13 +72,13 @@ class InfoSection extends Component {
         </div>
     </div>
        
-    <div className="col-md-6 product_info">
+    <div className="col-lg-6 product_info">
         <div className="row">
             <h5>Specyfikacja</h5>
         </div>
         <hr />
         <div className="row">
-            <div id="parametr-1" className="col-sm-3 bold">Ekran:</div>
+            <div id="parametr-1" className="col-3 bold">Ekran:</div>
             <div id="wartosc-1" className="col-sm">
               <p>6.1 inches, 90.3 cm2 (~79.0% screen-to-body ratio)</p>
               <p>828 x 1792 pixels, 19.5:9 ratio (~326 ppi density)</p>
@@ -86,19 +86,19 @@ class InfoSection extends Component {
             </div>
         </div>
         <div className="row">
-            <div id="parametr-2" className="col-sm-3 bold">Wymiary:</div>
+            <div id="parametr-2" className="col-3 bold">Wymiary:</div>
             <div id="wartosc-2" className="col-sm">
               <p>150.9 x 75.7 x 8.3 mm (5.94 x 2.98 x 0.33 in)</p>
             </div>
         </div>
         <div className="row">
-            <div id="parametr-3" className="col-sm-3 bold">Pamięć:</div>
+            <div id="parametr-3" className="col-3 bold">Pamięć:</div>
             <div id="wartosc-3" className="col-sm">
               <p>64/128/256 GB, 3 GB RAM</p>
             </div>
         </div>
         <div className="row">
-            <div id="parametr-4" className="col-sm-3 bold">Aparat:</div>
+            <div id="parametr-4" className="col-3 bold">Aparat:</div>
             <div id="wartosc-4" className="col-sm">
               <p>12 MP, f/1.8, 26mm (wide), 1/2.55", 1.4µm, OIS, PDAF</p>
               <p>Quad-LED dual-tone flash, HDR (photo/panorama)</p>

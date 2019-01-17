@@ -1,49 +1,54 @@
 import React, { Component } from 'react'
 import axios from 'axios'
-
+import ReactDOM from "react-dom";
+import { withRouter } from "react-router";
 
 
 class ReviewSection extends Component {
 
   constructor(props) {
   super(props);
-  this.state = {products:[]};
+  this.state = {rates:[]};
+
 }
 
 
   componentDidMount() {
+	const {
+      match: {
+        params: { product_id }
+      }
+    } = this.props;
 
-  //http://oceneo-api.herokuapp.com/api/products.json
-  //https://jsonplaceholder.typicode.com/users
-  
-   axios.get('http://oceneo-api.herokuapp.com/api/products/1/rates.json')
+   axios.get(`https://oceneo-api.herokuapp.com/api/products/${product_id}/rates`)
    .then(res => {
      console.log(res)
-	 const products = res.data;
-     this.setState({products})
+	 const rates = res.data;
+     this.setState({rates})
    })
    .catch(error => console.log(error))
  }
 
  
  
- 
   render(){
+
+     
 		return(
 		
-			<div className="container products">
-				{this.state.products.map(product => 
+			<div id="comments" className="container products">
+				{this.state.rates.map(rate => 
 				
-				<div className="row" key={product.id}>
-					<div className="col-sm-2">
+				<div className="row" key={rate.id}>
+					<div className="col-2">
 						<img src="https://dummyimage.com/70x70/9d9da3/050505" className="img-rounded" />
-						<div className="review-block-name">{product.user_id}</div>
-						<div className="review-block-date">{(new Date()).toLocaleDateString('en-US', product.created_at)}<br />15:30</div>
+						<div className="review-block-name">{rate.user_id}</div>
+						<div className="review-block-date">{(new Date()).toLocaleDateString('en-US', rate.created_at)}<br /></div>
 					</div>
 					
-				<div className="col-sm-10">
-				
-				
+				<div className="col-10">
+			
+				 
                   <div className="review-block-rate">
                     <i className="icon-star" />
                     <i className="icon-star" />
@@ -51,28 +56,11 @@ class ReviewSection extends Component {
                     <i className="icon-star-empty" />
                     <i className="icon-star-empty" />
                   </div>
-				  <div className="review-block-description">{product.comment}</div>
+				  <div className="review-block-description">{rate.comment}{rate.name}</div>
                   <hr />
+			
+			
 				  
-				  
-				  <div className="row">
-                    <div className="col-sm-6">
-                      <h6>Zalety:</h6>
-                    </div>
-                    <div className="col-sm-6">
-                      <h6>Wady:</h6>
-                    </div>
-				  </div>
-				  
-				  
-				  <div className="review-block-cons-pros row">
-                    <div className="col-sm-6 review-block-pros">
-                      <p>placeholder</p>
-                    </div>
-                    <div className="col-sm-6 review-block-cons">
-                      <p>placeholder</p>
-                    </div>
-                  </div>
 
 				  
 {/*col-sm-10*/}</div> 
@@ -91,4 +79,4 @@ class ReviewSection extends Component {
 
 
 
-export default ReviewSection
+export default withRouter(ReviewSection);

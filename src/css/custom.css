@@ -132,6 +132,7 @@ header.container{
     color:#e91e63;
     transform:rotateY(360deg);
 }
+
 /* Product info */ 
 .product_info>col-md-3{
 	float:left;

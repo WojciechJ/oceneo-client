@@ -29,16 +29,16 @@ class Header extends Component {
           <Collapse isOpen={!this.state.collapsed} navbar>
             <Nav navbar>
               <NavItem>
-                <NavLink href="/components/"><i className="icon-plus" /> Dodaj produkt</NavLink>
+                <NavLink href="/addproduct"><i className="icon-plus" /> Dodaj produkt</NavLink>
               </NavItem>
 			  <NavItem>
-                <NavLink href="/components/"><i className="icon-user" /> Logowanie</NavLink>
+                <NavLink href="/login"><i className="icon-user" /> Logowanie</NavLink>
               </NavItem>
               <NavItem>
-                <NavLink href=""><i className="icon-user-add" /> Rejestracja</NavLink>
+                <NavLink href="/register"><i className="icon-user-add" /> Rejestracja</NavLink>
               </NavItem>
 			  <NavItem>
-                <NavLink href=""><i className="icon-user" /> Profil</NavLink>
+                <NavLink href="/account/:user_id"><i className="icon-user" /> Profil</NavLink>
               </NavItem>
             </Nav>
           </Collapse>

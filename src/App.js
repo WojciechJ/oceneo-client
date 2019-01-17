@@ -1,24 +1,34 @@
 ﻿import React, { Component } from 'react';
+
 import Home from './components/Home';
 import ProductPage from './components/ProductPage';
 import AddReview from './components/AddReview';
-import ProductPage1 from './components/ProductPage1';
-import ProductPage2 from './components/ProductPage2';
+
+import Login from './components/Login';
+import Register from './components/Register';
+import Account from './components/Account';
+import Recover from './components/Recover';
+
 import {
 	BrowserRouter as Router,
-	Route
+	Route,
+	withRouter
 } from 'react-router-dom';
+
+const ProductPageWithRouter = withRouter(ProductPage);
 
 class App extends Component {
   render() {
     return (
 	<Router>
       <div className="container">
-	  <Route exact path="/" component={Home}></Route>
-	  <Route path="/product/:id" component={ProductPage}></Route>
-	  <Route path="/product1" component={ProductPage1}></Route>
-	  <Route path="/product2" component={ProductPage2}></Route>
-	  <Route path="/addreview" component={AddReview}></Route>
+	  <Route exact path="/" component={Home}/>
+	  <Route path="/product/:product_id" component={ProductPage}/>
+	  <Route path="/addreview/:product_id" component={AddReview}/>
+	  <Route path="/login" component={Login}/>
+	  <Route path="/register" component={Register}/>
+	  <Route path="/account/:user_id" component={Account}/>
+	  <Route path="/recover" component={Recover}/>
       </div>
 	</Router>
     );
@@ -26,3 +36,5 @@ class App extends Component {
 }
 
 export default App;
+
+

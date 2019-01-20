@@ -144,8 +144,6 @@ header.container{
 }
 .container .product_info{
 	padding:30px;
-	min-height:500px;
-	float:left;
 }
 
 /* Comment section  */
@@ -191,17 +189,18 @@ header.container{
 	font-size:13px;
 }
 .container .rating_simple{
-	width:49.9%;
+	
 	height:auto;
 	min-height:100px;
 	float:left;
-	font-size:40px;
+	font-size:30px;
 }
+
 .myorange{
 	color:#FA9302;
 }
 .myyellow{
-	color:#f9da27;
+	color:#FA9302;
 }
 .container .rating_advanced{
 	width:49.9%;

@@ -7,6 +7,7 @@ import $ from 'jquery';
 import Header from '../components/Header';
 import InfoSection from '../components/InfoSection';
 import ReviewSection from '../components/ReviewSection';
+import AddReviewButton from '../components/AddReviewButton';
 import Footer from '../components/Footer';
 class ProductPage extends Component {
   render() {
@@ -17,6 +18,7 @@ class ProductPage extends Component {
 		<div className="container products_page">
 			<InfoSection />
 			<ReviewSection />
+			<AddReviewButton />
 		</div>
 		<Footer />
       </div>

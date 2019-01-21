@@ -67,15 +67,18 @@ http://localhost:3001/home
 - https://codesandbox.io/s/6v59yv2zl3 (serach bar example)
 - https://medium.com/@iamjane/devise-with-react-webpacker-and-rails-dacbf9ae0233
 
-Nasze api
+#### Nasze api
 ```
 http://oceneo-api.herokuapp.com/api/products.json
 http://oceneo-api.herokuapp.com/api/products/<id>/rates.json
 ```
-Przykladowe api
+##### Przykladowe api
 ```
 https://jsonplaceholder.typicode.com/users
 ```
+### Strona
+- http://oceneo.herokuapp.com/
+
 
 ### Etapy
 ##### Strony

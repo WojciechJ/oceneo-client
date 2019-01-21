@@ -65,6 +65,7 @@ http://localhost:3001/home
 - https://goshakkk.name/array-form-inputs/
 - https://serverless-stack.com/chapters/create-a-login-page.html
 - https://codesandbox.io/s/6v59yv2zl3 (serach bar example)
+- https://medium.com/@iamjane/devise-with-react-webpacker-and-rails-dacbf9ae0233
 
 Nasze api
 ```

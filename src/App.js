@@ -47,8 +47,16 @@ updateCurrentUser(email) {
   }
 render(){
     return (
+<<<<<<< HEAD
       <div>
         <ProductsContainer/>
+=======
+      <div className="container">
+        <header className="container">
+            <h2>Oceneo - oceń produkty</h2>
+        </header>
+        <ProductsContainer />
+>>>>>>> a913ddccc99ec911566d920473d4c90c5111fe53
       </div>
     )
   }

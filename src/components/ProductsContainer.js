@@ -19,19 +19,19 @@ class ProductsContainer extends Component {
 
   //http://oceneo-api.herokuapp.com/api/products.json
   //https://jsonplaceholder.typicode.com/users
-  
-   axios.get('http://oceneo-api.herokuapp.com/api/products.json')
+
+   axios.get('https://oceneo-api.herokuapp.com/api/products.json')
    .then(res => {
      console.log(res)
 	 const products = res.data;
      this.setState({products})
    })
    .catch(error => console.log(error))
-   
+
  }
 
   render(){
-	  
+
 		return(
 				<div className="container">
 				{this.state.products.map(product =>
@@ -52,8 +52,8 @@ class ProductsContainer extends Component {
 				)}
 
 				</div>
-				
-          
+
+
 		 )
 		}
 }

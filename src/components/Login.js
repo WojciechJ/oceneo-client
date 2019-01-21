@@ -34,7 +34,7 @@ class Login extends Component {
             <h1>Oceneo</h1>
           </div>
         
-          <form onSubmit={this.handleSubmit} role="form" class="loginform">
+          <form onSubmit={this.handleSubmit} role="form" className="loginform">
 		  
             <input 
 			autoFocus

@@ -54,7 +54,7 @@ PORT=3001 react-scripts start
 ```
 W przeglądarce:
 ```
-http://localhost:3001/home
+http://localhost:3001
 ```
 
 ### Przydatne strony
